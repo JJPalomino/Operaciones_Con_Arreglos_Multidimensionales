@@ -9,12 +9,12 @@ public class Main {
     public static void Operaciones() {
         Scanner scanner = new Scanner(System.in);
         int eleccion;
-
-        System.out.println("Practiquemos con las matricez");
-        System.out.println("Seleccione una opcion: " +
-                "\n 1:Sumar matricez " +
-                "\n 2:Restar matricez" +
-                "\n 3:Multiplicar matricez");
+        System.out.println("Bienvenido a la calculadora básica de Matrices ");
+        System.out.println("Practiquemos con las matrices");
+        System.out.println("Seleccione una opción: " +
+                "\n 1:Sumar matrices " +
+                "\n 2:Restar matrices" +
+                "\n 3:Multiplicar matrices");
         eleccion = scanner.nextInt();
 
         switch (eleccion) {
@@ -28,26 +28,26 @@ public class Main {
                 multiplicacion();
                 break;
             default:
-                System.out.println("Eleccion incorrecta \n vuelva a intentar");
+                System.out.println("Elección incorrecta \n vuelva a intentar");
 
         }
     }
 
     public static void suma() {
 
-        System.out.println("    *****SUMA DE MATRICEZ*****");
+        System.out.println("*****SUMA DE MATRICES*****");
         //Crear arreglo de 2 x 2
         int [][] arregloA = new int [2][2];
         int [][] arregloB = new int [2][2];
         int [][] arregloSuma = new int [2][2];
 
-        //LLenar arregloA con numeros aleatorios
+        //LLenar arregloA con números aleatorios
         for (int fila = 0; fila < arregloA.length; fila++) {
             for (int columna = 0; columna < arregloA[fila].length; columna++) {
                 arregloA[fila][columna] = (int)Math.floor(Math.random()*5);
             }
         }
-        //LLenar arregloB con numeros aleatorios
+        //LLenar arregloB con números aleatorios
         for (int fila = 0; fila < arregloB.length; fila++) {
             for (int columna = 0; columna < arregloB[fila].length; columna++) {
                 arregloB[fila][columna] = (int)Math.floor(Math.random()*5);
@@ -56,7 +56,7 @@ public class Main {
         //Sumar arreglos A y B, almacenar los valores en arregloSuma
         for (int fila = 0; fila < arregloSuma.length; fila++) {
             for (int columna = 0; columna < arregloSuma[fila].length; columna++) {
-                //Almacena la suma de cada posicion en arreglo suma
+                //Almacena la suma de cada posición en arreglo suma
                 arregloSuma[fila][columna] = arregloA[fila][columna] + arregloB[fila][columna];
             }
         }
