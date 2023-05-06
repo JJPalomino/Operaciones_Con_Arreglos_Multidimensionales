@@ -5,7 +5,7 @@ public class Main {
         Operaciones();
     }
 
-    //Metodo para seleccionar la operacion que se quiera hacer con las matricez
+    //Método para seleccionar la operación que se quiera hacer con las matrices
     public static void Operaciones() {
         Scanner scanner = new Scanner(System.in);
         int eleccion;
@@ -136,7 +136,7 @@ public class Main {
 
     public static void multiplicacion() {
 
-        //creacion de matricez
+        //creación de matrices
         int m1[][] = new int[2][2];  //matriz uno
         int m2[][] = new int[2][2];  //matriz dos
         int mR[][] = new int[2][2];  //matriz resultante
@@ -144,16 +144,16 @@ public class Main {
         //llenado matriz uno
         for (int i = 0; i < m1.length; i++) {
             for (int j = 0; j < m1[i].length; j++) {
-                m1[i][j] = (int) (Math.random() * 5); // genera numero al azar no mayores a 5
+                m1[i][j] = (int) (Math.random() * 5); // genera número al azar no mayores a 5
             }
         }
         //llenado matriz dos
         for (int i = 0; i < m2.length; i++) {
             for (int j = 0; j < m2[i].length; j++) {
-                m2[i][j] = (int) (Math.random() * 5); // genera numero al azar no mayores a 5
+                m2[i][j] = (int) (Math.random() * 5); // genera número al azar no mayores a 5
             }
         }
-        //multiplicacion de matricez
+        //multiplicación de matrices
         for (int i = 0; i < 4; i++) {
 
 //se va a llenar el primer espacio de la matriz resultante al multiplicar filas por columnas en su respectivo orden
@@ -183,7 +183,7 @@ public class Main {
             }
 
         }
-        //imprecion de resultados
+        //Impresión de resultados
 
         //matriz uno                               //matriz dos
         System.out.println("["+m1[0][0]+"]"+"["+m1[0][1]+"]"+" x "+"["+m2[0][0]+"]"+"["+m2[0][1]+"]"+" = "+"["+mR[0][0]+"]"+"["+mR[0][1]+"]"+
